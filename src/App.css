@@ -1,0 +1,74 @@
+#root {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.ant-form {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerCards {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ant-card {
+  width: 100%;
+  height: 75%;
+}
+.ant-card:last-of-type {
+  height: 25%;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-form-item-explain-error {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .ant-form {
+    width: 70%;
+  }
+
+  .containerCards {
+    width: 70%;
+  }
+
+  .ant-card:first-of-type .ant-card-body {
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .ant-form {
+    width: 85%;
+  }
+
+  .containerCards {
+    width: 85%;
+  }
+}
